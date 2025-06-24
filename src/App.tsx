@@ -253,7 +253,7 @@ function App() {
                 key={row.id}
                 id={row.id === 'mylist' ? 'mylist-section' : undefined}
                 data-section={row.id === 'most-liked' ? 'most-popular' : undefined}
-                className={row.id === 'mylist' ? 'pt-16' : ''}
+                className={row.id === 'mylist' ? 'pt-8' : ''}
               >
                 <ContentRow
                   title={row.title}
