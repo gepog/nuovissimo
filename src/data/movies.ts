@@ -3,14 +3,14 @@ import { Movie, ContentRow } from '../types';
 // Featured movie for hero section
 export const featuredMovie: Movie = {
   id: 'featured-1',
-  title: 'AI-Powered Workflow Builder',
-  description: 'Transform your text into dynamic multimedia content with our revolutionary AI-powered platform. Create engaging videos, audio, and interactive experiences from simple text prompts.',
-  genre: ['Technology', 'Innovation', 'AI'],
-  year: 2024,
-  rating: 'PG',
-  duration: '2h 15m',
-  thumbnail: '/src/assets/on_a_deep_navy_background_depict_a_sleek_ui_canvas_where_a_semi-transparent_dark-blue_text-prompt_b_uvijqjytzy8ywizk7lrc_1.png',
-  backdrop: '/src/assets/on_a_deep_navy_background_depict_a_sleek_ui_canvas_where_a_semi-transparent_dark-blue_text-prompt_b_uvijqjytzy8ywizk7lrc_1.png',
+  title: 'The Dark Knight',
+  description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
+  genre: ['Action', 'Crime', 'Drama'],
+  year: 2008,
+  rating: 'PG-13',
+  duration: '2h 32m',
+  thumbnail: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800',
+  backdrop: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1920',
   videoUrl: '/videos/sample-video.mp4',
   trailerUrl: '/videos/sample-trailer.mp4',
   isFeatured: true,
@@ -21,88 +21,171 @@ export const featuredMovie: Movie = {
 export const movies: Movie[] = [
   {
     id: 'movie-1',
-    title: 'Revenue Analytics Dashboard',
-    description: 'Comprehensive analytics platform showing revenue growth, user engagement metrics, and performance indicators with beautiful visualizations.',
-    genre: ['Business', 'Analytics', 'Dashboard'],
-    year: 2024,
-    rating: 'PG',
-    duration: '1h 45m',
-    thumbnail: '/src/assets/on_a_deep_navy_background_display_a_dynamic_ui_panel_showcasing_three_key_icons-_a_gold_coin_stack__bmi0q44gd974mwrgq0ce_0.png',
-    backdrop: '/src/assets/on_a_deep_navy_background_display_a_dynamic_ui_panel_showcasing_three_key_icons-_a_gold_coin_stack__bmi0q44gd974mwrgq0ce_0.png',
+    title: 'Inception',
+    description: 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
+    genre: ['Action', 'Sci-Fi', 'Thriller'],
+    year: 2010,
+    rating: 'PG-13',
+    duration: '2h 28m',
+    thumbnail: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1920',
     videoUrl: '/videos/sample-video.mp4',
     trailerUrl: '/videos/sample-trailer.mp4',
     likes: 892
   },
   {
     id: 'movie-2',
-    title: 'Visual Import System',
-    description: 'Advanced import modal interface showcasing seamless data integration with multiple format support and real-time preview capabilities.',
-    genre: ['Technology', 'UI/UX', 'Integration'],
-    year: 2024,
-    rating: 'PG',
-    duration: '1h 30m',
-    thumbnail: '/src/assets/on_a_deep_navy_background_illustrate_a_visual-builder_ui_panel_showing_an_import_modal_in_the_cente_dhcku7bn62g07zhrejku_1.png',
-    backdrop: '/src/assets/on_a_deep_navy_background_illustrate_a_visual-builder_ui_panel_showing_an_import_modal_in_the_cente_dhcku7bn62g07zhrejku_1.png',
+    title: 'Interstellar',
+    description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival.',
+    genre: ['Adventure', 'Drama', 'Sci-Fi'],
+    year: 2014,
+    rating: 'PG-13',
+    duration: '2h 49m',
+    thumbnail: 'https://images.pexels.com/photos/6896450/pexels-photo-6896450.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/6896450/pexels-photo-6896450.jpeg?auto=compress&cs=tinysrgb&w=1920',
     videoUrl: '/videos/sample-video.mp4',
     trailerUrl: '/videos/sample-trailer.mp4',
     likes: 756
   },
   {
     id: 'movie-3',
-    title: 'Flow Builder Pro',
-    description: 'Professional workflow automation tool featuring drag-and-drop interface with conditional logic and advanced flow management capabilities.',
-    genre: ['Automation', 'Workflow', 'Business'],
-    year: 2024,
-    rating: 'PG',
-    duration: '2h 0m',
-    thumbnail: '/src/assets/on_a_deep_navy_background_show_a_ui_canvas_where_two_semi-transparent_dark-blue_flow_blocksone_labe_cp8le6hf2m2lvtgn86re_1.png',
-    backdrop: '/src/assets/on_a_deep_navy_background_show_a_ui_canvas_where_two_semi-transparent_dark-blue_flow_blocksone_labe_cp8le6hf2m2lvtgn86re_1.png',
+    title: 'The Matrix',
+    description: 'A computer programmer is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.',
+    genre: ['Action', 'Sci-Fi'],
+    year: 1999,
+    rating: 'R',
+    duration: '2h 16m',
+    thumbnail: 'https://images.pexels.com/photos/8111085/pexels-photo-8111085.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/8111085/pexels-photo-8111085.jpeg?auto=compress&cs=tinysrgb&w=1920',
     videoUrl: '/videos/sample-video.mp4',
     trailerUrl: '/videos/sample-trailer.mp4',
     likes: 1034
   },
   {
     id: 'movie-4',
-    title: 'Advanced Flow Designer',
-    description: 'Next-generation flow design interface with intelligent node connections, automated routing, and collaborative editing features.',
-    genre: ['Design', 'Collaboration', 'Technology'],
-    year: 2024,
-    rating: 'PG',
-    duration: '1h 55m',
-    thumbnail: '/src/assets/on_a_deep_navy_background_show_a_ui_canvas_where_two_semi-transparent_dark-blue_flow_blocksone_labe_tb5subdftt3e2tr3ofb4_0.png',
-    backdrop: '/src/assets/on_a_deep_navy_background_show_a_ui_canvas_where_two_semi-transparent_dark-blue_flow_blocksone_labe_tb5subdftt3e2tr3ofb4_0.png',
+    title: 'Pulp Fiction',
+    description: 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
+    genre: ['Crime', 'Drama'],
+    year: 1994,
+    rating: 'R',
+    duration: '2h 34m',
+    thumbnail: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1920',
     videoUrl: '/videos/sample-video.mp4',
     trailerUrl: '/videos/sample-trailer.mp4',
     likes: 923
   },
-  // Additional movies using existing assets for variety
   {
     id: 'movie-5',
-    title: 'AI Content Generator',
-    description: 'Revolutionary AI-powered content creation platform that transforms simple text inputs into rich multimedia experiences.',
-    genre: ['AI', 'Content', 'Innovation'],
-    year: 2024,
-    rating: 'PG',
-    duration: '1h 40m',
-    thumbnail: '/src/assets/on_a_deep_navy_background_depict_a_sleek_ui_canvas_where_a_semi-transparent_dark-blue_text-prompt_b_uvijqjytzy8ywizk7lrc_1.png',
-    backdrop: '/src/assets/on_a_deep_navy_background_depict_a_sleek_ui_canvas_where_a_semi-transparent_dark-blue_text-prompt_b_uvijqjytzy8ywizk7lrc_1.png',
+    title: 'The Shawshank Redemption',
+    description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
+    genre: ['Drama'],
+    year: 1994,
+    rating: 'R',
+    duration: '2h 22m',
+    thumbnail: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1920',
     videoUrl: '/videos/sample-video.mp4',
     trailerUrl: '/videos/sample-trailer.mp4',
     likes: 1156
   },
   {
     id: 'movie-6',
-    title: 'Business Intelligence Suite',
-    description: 'Comprehensive business intelligence platform with advanced analytics, reporting, and data visualization capabilities.',
-    genre: ['Business', 'Intelligence', 'Analytics'],
-    year: 2024,
-    rating: 'PG',
-    duration: '2h 10m',
-    thumbnail: '/src/assets/on_a_deep_navy_background_display_a_dynamic_ui_panel_showcasing_three_key_icons-_a_gold_coin_stack__bmi0q44gd974mwrgq0ce_0.png',
-    backdrop: '/src/assets/on_a_deep_navy_background_display_a_dynamic_ui_panel_showcasing_three_key_icons-_a_gold_coin_stack__bmi0q44gd974mwrgq0ce_0.png',
+    title: 'Goodfellas',
+    description: 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.',
+    genre: ['Biography', 'Crime', 'Drama'],
+    year: 1990,
+    rating: 'R',
+    duration: '2h 26m',
+    thumbnail: 'https://images.pexels.com/photos/6896450/pexels-photo-6896450.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/6896450/pexels-photo-6896450.jpeg?auto=compress&cs=tinysrgb&w=1920',
     videoUrl: '/videos/sample-video.mp4',
     trailerUrl: '/videos/sample-trailer.mp4',
     likes: 834
+  },
+  {
+    id: 'movie-7',
+    title: 'Fight Club',
+    description: 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.',
+    genre: ['Drama'],
+    year: 1999,
+    rating: 'R',
+    duration: '2h 19m',
+    thumbnail: 'https://images.pexels.com/photos/8111085/pexels-photo-8111085.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/8111085/pexels-photo-8111085.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    videoUrl: '/videos/sample-video.mp4',
+    trailerUrl: '/videos/sample-trailer.mp4',
+    likes: 712
+  },
+  {
+    id: 'movie-8',
+    title: 'Forrest Gump',
+    description: 'The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold from the perspective of an Alabama man.',
+    genre: ['Drama', 'Romance'],
+    year: 1994,
+    rating: 'PG-13',
+    duration: '2h 22m',
+    thumbnail: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    videoUrl: '/videos/sample-video.mp4',
+    trailerUrl: '/videos/sample-trailer.mp4',
+    likes: 945
+  },
+  {
+    id: 'movie-9',
+    title: 'The Godfather',
+    description: 'An organized crime dynasty\'s aging patriarch transfers control of his clandestine empire to his reluctant son.',
+    genre: ['Crime', 'Drama'],
+    year: 1972,
+    rating: 'R',
+    duration: '2h 55m',
+    thumbnail: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    videoUrl: '/videos/sample-video.mp4',
+    trailerUrl: '/videos/sample-trailer.mp4',
+    likes: 1289
+  },
+  {
+    id: 'movie-10',
+    title: 'The Lord of the Rings',
+    description: 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth.',
+    genre: ['Adventure', 'Drama', 'Fantasy'],
+    year: 2001,
+    rating: 'PG-13',
+    duration: '2h 58m',
+    thumbnail: 'https://images.pexels.com/photos/6896450/pexels-photo-6896450.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/6896450/pexels-photo-6896450.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    videoUrl: '/videos/sample-video.mp4',
+    trailerUrl: '/videos/sample-trailer.mp4',
+    likes: 1067
+  },
+  {
+    id: 'movie-11',
+    title: 'Star Wars',
+    description: 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy.',
+    genre: ['Adventure', 'Fantasy', 'Sci-Fi'],
+    year: 1977,
+    rating: 'PG',
+    duration: '2h 1m',
+    thumbnail: 'https://images.pexels.com/photos/8111085/pexels-photo-8111085.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/8111085/pexels-photo-8111085.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    videoUrl: '/videos/sample-video.mp4',
+    trailerUrl: '/videos/sample-trailer.mp4',
+    likes: 998
+  },
+  {
+    id: 'movie-12',
+    title: 'Casablanca',
+    description: 'A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband.',
+    genre: ['Drama', 'Romance', 'War'],
+    year: 1942,
+    rating: 'PG',
+    duration: '1h 42m',
+    thumbnail: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800',
+    backdrop: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    videoUrl: '/videos/sample-video.mp4',
+    trailerUrl: '/videos/sample-trailer.mp4',
+    likes: 678
   }
 ];
 
@@ -112,54 +195,93 @@ export const contentRows: ContentRow[] = [
     id: 'trending',
     title: 'Trending Now',
     movies: [
-      movies[0], // Revenue Analytics Dashboard
-      movies[2], // Flow Builder Pro
-      movies[4], // AI Content Generator
-      movies[1], // Visual Import System
-      movies[3], // Advanced Flow Designer
-      movies[5], // Business Intelligence Suite
+      movies[0], // Inception
+      movies[2], // The Matrix
+      movies[4], // The Shawshank Redemption
+      movies[1], // Interstellar
+      movies[3], // Pulp Fiction
+      movies[8], // The Godfather
+      movies[9], // The Lord of the Rings
+      movies[10], // Star Wars
+      movies[7], // Forrest Gump
+      movies[5], // Goodfellas
+      movies[6], // Fight Club
+      movies[11], // Casablanca
     ]
   },
   {
     id: 'new-releases',
     title: 'New Releases',
     movies: [
-      movies[4], // AI Content Generator
-      movies[5], // Business Intelligence Suite
-      movies[0], // Revenue Analytics Dashboard
-      movies[2], // Flow Builder Pro
+      movies[1], // Interstellar
+      movies[0], // Inception
+      movies[2], // The Matrix
+      movies[3], // Pulp Fiction
+      movies[4], // The Shawshank Redemption
+      movies[5], // Goodfellas
     ]
   },
   {
     id: 'popular',
     title: 'Popular on PROJECT',
     movies: [
-      movies[2], // Flow Builder Pro (highest likes)
-      movies[4], // AI Content Generator
-      movies[3], // Advanced Flow Designer
-      movies[0], // Revenue Analytics Dashboard
-      movies[5], // Business Intelligence Suite
-      movies[1], // Visual Import System
+      movies[8], // The Godfather
+      movies[4], // The Shawshank Redemption
+      movies[9], // The Lord of the Rings
+      movies[2], // The Matrix
+      movies[10], // Star Wars
+      movies[7], // Forrest Gump
+      movies[3], // Pulp Fiction
+      movies[0], // Inception
+      movies[5], // Goodfellas
+      movies[1], // Interstellar
+      movies[6], // Fight Club
+      movies[11], // Casablanca
     ]
   },
   {
-    id: 'technology',
-    title: 'Technology & Innovation',
+    id: 'action',
+    title: 'Action & Adventure',
     movies: [
-      movies[1], // Visual Import System
-      movies[4], // AI Content Generator
-      movies[2], // Flow Builder Pro
-      movies[3], // Advanced Flow Designer
+      movies[0], // Inception
+      movies[2], // The Matrix
+      movies[9], // The Lord of the Rings
+      movies[10], // Star Wars
+      movies[1], // Interstellar
     ]
   },
   {
-    id: 'business',
-    title: 'Business Solutions',
+    id: 'drama',
+    title: 'Drama',
     movies: [
-      movies[0], // Revenue Analytics Dashboard
-      movies[5], // Business Intelligence Suite
-      movies[2], // Flow Builder Pro
-      movies[3], // Advanced Flow Designer
+      movies[4], // The Shawshank Redemption
+      movies[8], // The Godfather
+      movies[3], // Pulp Fiction
+      movies[6], // Fight Club
+      movies[7], // Forrest Gump
+      movies[11], // Casablanca
+    ]
+  },
+  {
+    id: 'sci-fi',
+    title: 'Sci-Fi',
+    movies: [
+      movies[0], // Inception
+      movies[1], // Interstellar
+      movies[2], // The Matrix
+      movies[10], // Star Wars
+    ]
+  },
+  {
+    id: 'classic',
+    title: 'Classic Movies',
+    movies: [
+      movies[8], // The Godfather
+      movies[11], // Casablanca
+      movies[4], // The Shawshank Redemption
+      movies[3], // Pulp Fiction
+      movies[5], // Goodfellas
+      movies[6], // Fight Club
     ]
   },
   {
